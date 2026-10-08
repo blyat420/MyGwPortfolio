@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Top Left Deep Indigo Glow -->
+    <radialGradient id="topLeftIndigo" cx="15%" cy="14%" r="35%">
+      <stop offset="0%" stop-color="#193273" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#0f1f4b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#030408" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Top Right Subtle Burgundy Wine Glow -->
+    <radialGradient id="topRightWine" cx="88%" cy="10%" r="28%">
+      <stop offset="0%" stop-color="#4a1525" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#2c0c16" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#030408" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Center Upper Midnight Blue Orb -->
+    <radialGradient id="centerMidnight" cx="50%" cy="32%" r="36%">
+      <stop offset="0%" stop-color="#1c3b88" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#102353" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#030408" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Lower Right Glowing Blue Orb -->
+    <radialGradient id="lowerRightBlue" cx="84%" cy="71%" r="34%">
+      <stop offset="0%" stop-color="#1f4296" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#112557" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#030408" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Bottom Midnight Base Glow -->
+    <radialGradient id="bottomBaseNavy" cx="38%" cy="96%" r="32%">
+      <stop offset="0%" stop-color="#132759" stop-opacity="0.75"/>
+      <stop offset="55%" stop-color="#0c1735" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#030408" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Diffusion blur filter for ultra-smooth bokeh -->
+    <filter id="bokehBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <!-- Deep Obsidian Black Background -->
+  <rect width="1080" height="1920" fill="#030408"/>
+
+  <!-- Glowing Atmospheric Light Orbs -->
+  <g filter="url(#bokehBlur)">
+    <!-- Top Left -->
+    <circle cx="160" cy="270" r="320" fill="url(#topLeftIndigo)"/>
+    <!-- Top Right Burgundy -->
+    <circle cx="950" cy="190" r="280" fill="url(#topRightWine)"/>
+    <!-- Center Orb -->
+    <circle cx="540" cy="620" r="360" fill="url(#centerMidnight)"/>
+    <!-- Lower Right Orb -->
+    <circle cx="910" cy="1370" r="340" fill="url(#lowerRightBlue)"/>
+    <!-- Bottom Navy Orb -->
+    <circle cx="410" cy="1840" r="300" fill="url(#bottomBaseNavy)"/>
+  </g>
+</svg>
